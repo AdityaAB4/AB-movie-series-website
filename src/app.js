@@ -28,7 +28,7 @@ if (!name) {
 //   }
 // });
 
-const port = 80;
+// const port = 80;
 const path = require("path");
 const { RSA_NO_PADDING } = require("constants");
 const { title } = require("process");
@@ -37,6 +37,7 @@ const { title } = require("process");
 // console.log(path.join(__dirname, "../public"));
 
 const app = express();
+const port = process.env.PORT || 80
 const publicDirectoryPath = path.join(__dirname, "../public");
 // app.get("/index", (req, res) => {
 //   res.send("index.html");
