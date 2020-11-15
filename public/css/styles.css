@@ -1,0 +1,398 @@
+body {
+  background: rgb(58, 58, 58);
+  color: white;
+  font-family: Helvetica Neve, Helvetica, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER*/
+header {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("/images/nfxbg2.png");
+  /* color: rgba(0,0,0,0.8); */
+  background-size: 100%;
+  background-position: center;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+header .ab {
+  display: inline-block;
+  position: absolute;
+  left: 1190px;
+  top: -3px;
+  width: 73px;
+  background-size: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+header a:hover {
+      border-bottom: 2px solid red;
+      color: red;
+      /* text-decoration: underline; */
+      background-color: black;
+      padding: 5px;
+      border-radius: 10px;
+}
+header .mobile {
+  display: none;
+}
+header .logo a {
+  background-image: url("images/Nfxlogo.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-left: 112px;
+  display: inline-block;
+  position: relative;
+  text-indent: -99999999px;
+  top: -50px;
+  margin-top: 60px;
+  height: 140px;
+  width: 300px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: name;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#fname {
+  background-color: whitesmoke;
+  cursor: pointer;
+  border-radius: 60px;
+  border-color: black;
+  padding: 5px;
+  margin-top: 7px;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+
+#fname:hover {
+  background-color: rgb(223, 235, 235);
+  font-family: "Roboto Slab", serif;
+}
+
+/* RESPONSIVE RULES  */
+@media screen and (max-width: 797px) {
+  header {
+    height: 200px;
+  }
+  header .mobile {
+    display: inline-block;
+  }
+  header .desktop {
+    display: none;
+  }
+}
+figure figcaption {
+  color:black;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+figure figcaption:hover {
+  cursor: pointer;
+}
+#atag{
+   margin-top: 62px;
+   font-size: larger;
+  
+}
+#aboutsect{
+  margin-top: 62px;
+}
+#message-1 {
+  font-family: none;
+  color:#fffafa;
+  background-color: black;
+  width: 209px;
+  display: inline;
+  text-shadow: 0cm;
+  display: inline;
+}
+#message-2 {
+  font-family: none;
+  color:#fffafa;
+  background-color: black;
+  width:209px;
+  text-shadow: 0cm;
+  margin: auto;
+  margin-top: 5px;
+  padding: 0cm;
+}
+#message-3 {
+  font-family: none;
+  color:#fffafa;
+  background-color: black;
+  width:209px;
+  text-shadow: 0cm;
+  margin: auto;
+  margin-top: 5px;
+  
+}
+#message-4 {
+  font-family: none;
+  color:#fffafa;
+  background-color: black;
+  width:209px;
+  text-shadow: 0cm;
+  margin: auto;
+  margin-top: 5px;
+}
+#message-5 {
+  font-family: none;
+  color:#fffafa;
+  background-color: black;
+  background-image: url({Poster});
+  text-shadow: 0cm;
+  margin: auto;
+  margin-top: 5px;
+
+}
+
+/*FEAUTURES*/
+
+.features {
+  background-color: whitesmoke;
+  color: grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  animation-name: ad;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition-duration: 0.4s;
+}
+ button {
+   cursor: pointer;
+   border: 1px solid #888888;
+   background: white;
+   border:none;
+   border-radius: 7px;
+   border-color: black;
+   
+   
+ }
+ button:hover{
+   color: red;
+   background-color: black;
+   font-weight: 400;
+   transition-duration: 0.4s; ;
+ }
+
+ #abouttext {
+     color: red;
+     text-decoration: solid;
+     background-color: black;
+     width: 209px;
+     display: inline;
+     font-family: none;
+     font-size: larger;
+     font-weight: 500;
+     
+    }
+  @keyframes aboutanim{
+    
+  }
+@keyframes ad {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.features figure {
+  display: inline-block;
+  width: 100px;
+  margin: auto;
+}
+.features figure img {
+  box-shadow: gray 10px 10px 10px;
+  transition-duration: 0.4s;
+  width: 150px;
+}
+.features figure img:hover {
+  transform: scale(2);
+  box-shadow: none;
+}
+
+footer {
+  background: black;
+  color: gray;
+  font-size: 12px;
+  padding: 20px 20px;
+  text-align: center;
+  animation-name: ad1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* animation-direction:reverse; */
+}
+@keyframes ad1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+footer .bft {
+  display: inline-block;
+  position: absolute;
+  left: 455px;
+  top: 515px;
+  width: 53px;
+  background-size: 20px;
+  /* animation-name: ad2;
+  animation-duration: 2s;
+  animation-iteration-count: 1; */
+}
+@keyframes ad1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #message-5{
+    word-wrap: break-word;
+
+  }
+  
+  
+  .features {
+    background: #888888;
+
+  }
+  #atag {
+    margin-top: 10px;
+    font-size: small;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  #message-5{
+    word-wrap: break-word;
+  }
+  
+  
+  .features {
+    background: rgb(92, 134, 161);
+  }
+  #atag {
+    margin-top: 10px;
+    font-size: small;
+  }
+}
+
+/*tablets*/
+
+@media screen and (max-width: 768px) {
+  
+  #message-5{
+    word-wrap: break-word;
+  }
+  
+  footer{
+    padding-bottom: 20px;
+  }
+  #atag {
+    margin-top: 10px;
+  }
+  
+  
+  header nav {
+    float: none;
+    clear: left;
+    width: 100%;
+ }
+ .features figure {
+  display: inline-block;
+  width: fit-content;
+  margin: auto;
+}
+.features figure img {
+  /* box-shadow: gray 10px 10px 10px; */
+  margin-top: auto;
+  width: 100px;
+}
+
+ footer .bft {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  top: 378px;
+  width: 53px;
+  background-size: 20px;
+  /* animation-name: ad2;
+  animation-duration: 2s;
+  animation-iteration-count: 1; */
+}
+}
+
+/*Mobiles*/
+
+@media screen and (max-width: 480px) {
+  #message-5{
+    word-wrap: break-word;
+  }
+  
+  #atag {
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .features figure img{
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+  }
+  /* figure figcaption:hover {
+    cursor: pointer;
+    
+  } */
+  .features figure img {
+    /* box-shadow: gray 10px 10px 10px; */
+    width: 50px;
+  }
+  .features figure img:hover {
+    /* transform: scale(2); */
+    box-shadow: none;
+  }
+
+  footer .bft {
+    display: inline-block;
+    position: absolute;
+    left: 24px;
+    top: 340px;
+    width: 53px;
+    background-size: 20px;
+    
+    /* animation-name: ad2;
+    animation-duration: 2s;
+    animation-iteration-count: 1; */
+  }
+
+}
